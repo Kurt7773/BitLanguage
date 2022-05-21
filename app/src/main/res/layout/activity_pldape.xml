@@ -1,83 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:paddingHorizontal="15dp"
-    android:padding="15dp">
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/txtQuestion"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="92dp"
+        android:text="TextView"
         android:textAlignment="center"
-        android:textSize="25dp"
-        android:text="TextView" />
+        android:textColor="#e8e4c9"
+        android:textSize="20dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtLife"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="320dp"
-        android:textSize="25dp"
-        android:text="" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="270dp"
-        app:srcCompat="@drawable/heart" />
+        android:layout_width="58dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/btnCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="520dp"
-        android:text="Check"
-        ></Button>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:layout_marginBottom="60dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion"
+        app:srcCompat="@drawable/square" />
 
 
     <RadioGroup
         android:id="@+id/RadioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal">
+        android:layout_width="355dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2">
 
         <RadioButton
             android:id="@+id/cb1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="300dp"
-            android:text="CheckBox" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="95dp"
+            android:text="CheckBox"
+            android:textColor="#e8e4c9"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.297" />
 
         <RadioButton
             android:id="@+id/cb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/cb1"
-            android:text="CheckBox" />
+            android:layout_marginStart="8dp"
+            android:text="CheckBox"
+            android:textColor="#e8e4c9"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
         <RadioButton
             android:id="@+id/cb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/cb1"
-            android:text="CheckBox" />
-
+            android:layout_marginStart="8dp"
+            android:text="CheckBox"
+            android:textColor="#e8e4c9"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.692" />
 
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#212f37"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/greenflag"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheck"
+        app:layout_constraintStart_toStartOf="@+id/panel"
+        app:layout_constraintTop_toTopOf="@+id/panel"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/greenflag" />
+
+    <ImageView
+        android:id="@+id/redflag"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheck"
+        app:layout_constraintStart_toStartOf="@+id/panel"
+        app:layout_constraintTop_toTopOf="@+id/panel"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/redflag" />
+
+    <TextView
+        android:id="@+id/wintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Excellent!"
+        android:textColor="#4bbf54"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/greenflag"
+        app:layout_constraintStart_toEndOf="@+id/greenflag"
+        app:layout_constraintTop_toTopOf="@+id/greenflag"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <TextView
+        android:id="@+id/losetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Incorrect!"
+        android:textColor="#ff0000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/redflag"
+        app:layout_constraintStart_toEndOf="@+id/redflag"
+        app:layout_constraintTop_toTopOf="@+id/redflag"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:id="@+id/txtcorrectanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:text="Correct answer:"
+        android:textColor="#e8e4c9"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/losetext" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"
+        android:background="@drawable/roundstyle"
+        android:text="Check"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></Button>
+
+    <TextView
+        android:id="@+id/txtanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:textColor="#e8e4c9"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtcorrectanswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtcorrectanswer" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/roundstyle"
+        android:text="Continue"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"></Button>
 
 
-</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,7 +39,10 @@ class DatabaseEdit : AppCompatActivity() {
 
         btnDeleteData.setOnClickListener{
             var db = helper.writableDatabase
-            db.delete("Table1", "ITEMNUMBER"+"=?", arrayOf(txtNumberDelete.toString()))
+            for (x in 0..100){
+                db.delete("Table1", "ITEMNUMBER"+"=?", arrayOf(x.toString()))
+            }
+
 
         }
 

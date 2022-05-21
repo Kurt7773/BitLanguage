@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flowchartlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f1"
+    tools:context=".PLDAPE2">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="288dp"
+        android:layout_height="257dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/c1" />
+
+    <RadioButton
+        android:id="@+id/Fcb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text=""
+        android:textColor="#e8e4c9"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <RadioButton
+        android:id="@+id/Fcb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text=""
+        android:textColor="#e8e4c9"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5" />
+
+    <RadioButton
+        android:id="@+id/Fcb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="64dp"
+        android:text=""
+        android:textColor="#e8e4c9"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Fcb1"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <RadioButton
+        android:id="@+id/Fcb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="76dp"
+        android:text=""
+        android:textColor="#e8e4c9"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/Fcb2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Choose the correct shape"
+        android:textColor="@color/white"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Fcb1"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/panel2"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:background="#212f37"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/greenflag2"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheck"
+        app:layout_constraintStart_toStartOf="@+id/panel2"
+        app:layout_constraintTop_toTopOf="@+id/panel2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/greenflag" />
+
+    <ImageView
+        android:id="@+id/redflag2"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheck"
+        app:layout_constraintStart_toStartOf="@+id/panel2"
+        app:layout_constraintTop_toTopOf="@+id/panel2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/redflag" />
+
+    <TextView
+        android:id="@+id/wintext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Excellent!"
+        android:textColor="#4bbf54"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/greenflag2"
+        app:layout_constraintStart_toEndOf="@+id/greenflag2"
+        app:layout_constraintTop_toTopOf="@+id/greenflag2"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <TextView
+        android:id="@+id/losetext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Incorrect!"
+        android:textColor="#ff0000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/redflag2"
+        app:layout_constraintStart_toEndOf="@+id/redflag2"
+        app:layout_constraintTop_toTopOf="@+id/redflag2"
+        app:layout_constraintVertical_bias="0.533" />
+
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundstyle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Check"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck"></Button>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundstyle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Continue"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck"></Button>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
